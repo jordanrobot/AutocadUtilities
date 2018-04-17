@@ -2,7 +2,7 @@
 ;####################
 ;###   Scratch!   ###
 ;####################
-; version 1.2.5
+; version 1.2.6
 ;
 ;	-A scratchpad layer utility for Autocad
 ;
@@ -174,7 +174,7 @@
 			(scratch_jumpout)
 			(scratch_jumpin)
 		)	;if	
-	(command "_.layer" "make" scratchLayer "color" scratchLayerColor "" "ON" "" "Ltype" scratchLayerLineT "" "Plot" scratchLayerPlot "" "LWeight" scratchLayerWeight "" "")
+	(command "-layer" "make" scratchLayer "color" scratchLayerColor "" "ON" "" "Ltype" scratchLayerLineT "" "Plot" scratchLayerPlot "" "LWeight" scratchLayerWeight "" "")
 	) ;if
 	(setvar "cmdecho" old_cmdecho)
 	(princ)
@@ -222,7 +222,7 @@
 (defun c:m`( / eset )
 	(while (not eset)(setq eset (ssget)))
 	(if (not (tblsearch "LAYER" scratchLayer)) 
-				(command "_.layer" "make" scratchLayer "color" scratchLayerColor "" "ON" "" "Ltype" scratchLayerLineT "" "Plot" scratchLayerPlot "" "LWeight" scratchLayerWeight "" "")
+				(command "-layer" "make" scratchLayer "color" scratchLayerColor "" "ON" "" "Ltype" scratchLayerLineT "" "Plot" scratchLayerPlot "" "LWeight" scratchLayerWeight "" "")
 	) ;if
 	(command ".chprop" "_p" "" "_la" "constructions" "")
 	(princ)
