@@ -1,0 +1,48 @@
+Directory Dialogue Bit Values Flag Bit Values Bit Result
+
+0       Standard behaviour (Default)
+
+1       Only file system folders can be selected. If this bit is set, the OK
+		button is disabled if the user selects a folder that doesn't belong
+		to the file system.
+
+2       The user is prohibited from browsing below the domain within a network
+
+4       Room for status text is provided under the dialog box
+
+8       Returns file system ancestors only. An ancestor is a subfolder that is
+		beneath the root folder.  If the user selects an ancestor of the root
+		folder that is not part of the file system, the OK button is grayed.
+
+16      Shows an edit box in the dialog box for the user to type the name of an
+		item.
+
+32      Validate the name typed in the edit box.
+
+64      Enable drag-and-drop capability within the dialog box, reordering,
+		shortcut menus, new folders, delete, and other shortcut menu commands.
+
+128     The browse dialog box can display URLs.
+
+256     When combined with flag 64, adds a usage hint to the dialog box, in
+		place of the edit box.
+
+512     Suppresses display of the 'New Folder' button
+
+1024    When the selected item is a shortcut, return the PIDL of the shortcut
+		itself rather than its target.
+
+4096    Enables the user to browse the network branch for computer names. If the
+		user selects anything other than a computer, the OK button is grayed.
+
+8192    Enables the user to browse the network branch for printer names. If the
+		user selects anything other than a printer, the OK button is grayed.
+
+16384   Allows browsing for everything: the browse dialog box displays files as
+		well as folders.
+
+32768   If combined with flag 64, the browse dialog box can display shareable
+		resources on remote systems.
+
+65536   Windows7 & later: Allow folder junctions such as a library or a
+		compressed file with a .zip file name extension to be browsed.
