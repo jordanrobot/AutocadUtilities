@@ -20,7 +20,6 @@
       ("2014" 0 (startapp "explorer.exe" "K:\\!Projects\\2014"))
       ("2015" 0 (startapp "explorer.exe" "K:\\!Projects\\2015"))
       ("2016" 0 (startapp "explorer.exe" "K:\\!Projects\\2016"))
-      ("Charlie" 0  (startapp "explorer.exe" "K:\!Projects\2016\Charlie and the Chocolate Factory - 68835\Tech Design"))
       ("" 1)
       ("Standard Parts" 0 (startapp "explorer.exe" "K:\\!Engineering Admin\\! Standard Parts"))
       ("Analysis" 0 (startapp "explorer.exe" "K:\\!Engineering Admin\\Analysis Library"))
