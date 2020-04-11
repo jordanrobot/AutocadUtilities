@@ -1,0 +1,5 @@
+(defun speak (tmp / )
+	(setq sapi (vlax-create-object "Sapi.SpVoice"))
+	(vlax-invoke sapi "Speak" tmp 0)
+	(vlax-release-object sapi)
+)
